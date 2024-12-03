@@ -11,25 +11,6 @@
 					<i class="fas fa-plus me-2"></i> Tambah Barang
 				</a>
 			</div>
-			<!-- Tombol Export Table -->
-			<div class="mb-3">
-				<a href="export2.php" class="btn btn-success custom-btn" data-bs-toggle="tooltip"
-					data-bs-placement="top" title="Export Table">
-					<i class="fas fa-download me-2"></i> Export Table
-				</a>
-			</div>
-
-			<!-- Filter tanggal -->
-			<div class="row mb-3">
-				<div class="col-md-6">
-					<div class="input-group">
-						<span class="input-group-text"><i class="fas fa-calendar-alt"></i> Dari</span>
-						<input type="date" id="min" name="min" class="form-control">
-						<span class="input-group-text"><i class="fas fa-calendar-alt"></i> Sampai</span>
-						<input type="date" id="max" name="max" class="form-control">
-					</div>
-				</div>
-			</div>
 
 			<!-- Tabel Barang Keluar -->
 			<div class="table-responsive">

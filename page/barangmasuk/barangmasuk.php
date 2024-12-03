@@ -11,24 +11,6 @@
                     <i class="fas fa-plus me-2"></i> Tambah Barang
                 </a>
             </div>
-            <!-- Tombol Export Table -->
-            <div class="mb-3">
-                <a href="export.php" class="btn btn-success custom-btn" data-bs-toggle="tooltip" data-bs-placement="top"
-                    title="Export Table">
-                    <i class="fas fa-download me-2"></i> Export Table
-                </a>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <span class="input-group-text">Dari</span>
-                        <input type="date" id="min" name="min" class="form-control">
-                        <span class="input-group-text">Sampai</span>
-                        <input type="date" id="max" name="max" class="form-control">
-                    </div>
-                </div>
-            </div>
 
             <div class="table-responsive">
                 <table class="table table-bordered" id="barangmasuk" width="100%" cellspacing="0">
@@ -71,9 +53,6 @@
                                         class="btn btn-danger btn-sm custom-btn"
                                         onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">
                                         <i class="fas fa-trash"></i> Hapus
-                                        <a href="javascript:void(0);" class="btn btn-primary" id="export-pdf"
-                                            data-id="ID_Transaksi">Generate Laporan PDF</a>
-                                    </a>
                                 </td>
                             </tr>
                         <?php } ?>

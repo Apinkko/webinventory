@@ -136,7 +136,9 @@ $koneksi = new mysqli("localhost", "root", "", "webinventory");
             <a class="collapse-item" href="?page=jenisbarang">Jenis Barang</a>
             <a class="collapse-item" href="?page=satuanbarang">Satuan Barang</a>
             <a class="collapse-item" href="?page=gudang">Data Barang</a>
-            <!--<a class="collapse-item" href="?page=supplier">Data Supplier</a> -->>
+            <a class="collapse-item" href="?page=karyawan">Karyawan</a>
+            <a class="collapse-item" href="?page=department">Department</a>
+            <!--<a class="collapse-item" href="?page=supplier">Data Supplier</a> -->
 
           </div>
         </div>
@@ -290,6 +292,29 @@ $koneksi = new mysqli("localhost", "root", "", "webinventory");
                 include "page/satuanbarang/ubahsatuan.php";
               } elseif ($aksi == "hapussatuan") {
                 include "page/satuanbarang/hapussatuan.php";
+              }
+            }
+
+            if ($page == "karyawan") {
+              if ($aksi == "") {
+                include "page/karyawan/index.php";
+              } elseif ($aksi == "add") {
+                include "page/karyawan/add.php";
+              } elseif ($aksi == "edit") {
+                include "page/karyawan/edit.php";
+              } elseif ($aksi == "delete") {
+                include "page/karyawan/delete.php";
+              }
+            }
+            if ($page == "department") {
+              if ($aksi == "") {
+                include "page/department/index.php";
+              } elseif ($aksi == "add") {
+                include "page/department/add.php";
+              } elseif ($aksi == "edit") {
+                include "page/department/edit.php";
+              } elseif ($aksi == "delete") {
+                include "page/department/delete.php";
               }
             }
 

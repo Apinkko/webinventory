@@ -11,11 +11,7 @@
                     <i class="fas fa-plus me-2"></i> Tambah Barang
                 </a>
             </div>
-            <div class="mb-3">
-                <a href="export4.php" class="btn btn-primary custom-btn">
-                    <i class="fas fa-download me-2"></i> Export Table
-                </a>
-            </div>
+            
             <div class="table-responsive">
                 <table class="table table-bordered" id="barangretur" width="100%" cellspacing="0">
                     <thead>
@@ -48,6 +44,10 @@
                                 <td><?php echo htmlspecialchars($data['jumlah']); ?></td>
                                 <!-- Tombol Hapus dan Export PDF -->
                                 <td>
+                                    <a href="?page=barangretur&aksi=ubahbarangretur&id_retur=<?php echo $data['id_transaksi']; ?>"
+                                        class="btn btn-info btn-sm mb-1 custom-btn">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </a>
                                     <a href="?page=barangretur&aksi=hapusbarangretur&id_retur=<?php echo $data['id_retur']; ?>"
                                         class="btn btn-danger btn-sm custom-btn"
                                         onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">

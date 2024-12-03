@@ -11,11 +11,11 @@
           <i class="fas fa-plus"></i> Tambah Barang
         </a>
       </div>
-      <div class="mb-3">
+      <!-- <div class="mb-3">
         <a href="export3.php" class="btn btn-primary custom-btn">
           <i class="fas fa-download"></i> Export Table
         </a>
-      </div>
+      </div> -->
       <div class="table-responsive">
         <table class="table table-bordered" id="gudang" width="100%" cellspacing="0">
           <!-- Include DataTables CSS -->
@@ -55,9 +55,7 @@
                     onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">
                     <i class="fas fa-trash"></i> Hapus
                   </a>
-                  <a href="pdf1.php" class="btn btn-warning btn-sm custom-btn">
-                    <i class="fas fa-file-pdf"></i> Export PDF
-                  </a>
+                 
                 </td>
               </tr>
             <?php } ?>
